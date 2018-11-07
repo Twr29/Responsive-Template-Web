@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"?>
+	<title>Contoh Website</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		.container{
+			position: absolute;
+			top: 20px;
+			left: calc((100% - 80%)/2);
+			width: 80%;
+		}
+		.right{
+			width: 65%;
+			height: 550px;
+			float: left;
+			margin-bottom: 10px;
+		}
+		.main{
+			position: relative;
+			list-style-type: none;
+			background-color: #F3F3F3;
+			padding: 0;
+			margin: 0;
+		}
+		.main li{
+			text-decoration:none;
+			display: inline-block;
+			padding: 15px 20px;
+			color: #737373;
+			font-family: serif;	
+			font-size: 14px;
+		}
+		.isi{
+			width:100%;
+			top: 5px;
+			position: relative;
+			height: 500px;
+			background-color: #F3F3F3;
+		}
+		.left{
+			float: right;
+			margin-left: 5px; 
+			width: 34%;
+			height: 550px;
+		}
+		.top{
+			width: 100%;
+			height: 150px;
+			background-color: #F3F3F3;
+			margin-bottom: 10px;
+		}
+		.center{
+			width: 100%;
+			height: 250px;
+			background-color: #F3F3F3;
+			margin-bottom: 10px;
+		}
+		@media screen and (max-width: 960px){
+			.right{
+				width: auto;
+				float: none;
+			}
+			.left{
+				width: auto;
+				float: none;
+				margin: 0;
+			}
+		}
+		@media screen and (max-width: 600px){
+			.main li{
+				padding: 15px 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="right">
+			<div class="menu">
+				<ul class="main">
+					<a href=""><li>HOME</li></a>
+					<a href=""><li>NGOPRAKIT</li></a>
+					<a href=""><li>ABOUT</li></a>
+					<a href=""><li>INFO</li></a>
+				</ul>
+			</div>
+			<div class="isi"></div>
+		</div>
+		<div class="left">
+			<div class="top"></div>
+			<div class="center"></div>
+		</div>
+	</div>
+</body>
+</html>
